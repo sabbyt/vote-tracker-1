@@ -1,3 +1,17 @@
+body {
+  color: #665544;
+  background-color: #d4d0c6;
+  font-family: 'Open Sans', sans-serif;
+  text-align: center;}
 
+.wrapper {
+  width: 550px;
+  height: 550px;
+  margin-left: auto;
+  margin-right: auto;}
 
-/* CSS Style Sheet */
+.entry {
+  width: 220px;
+  float: left;
+  margin: 10px;
+  height: 198px;}

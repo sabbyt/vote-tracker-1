@@ -1,7 +1,20 @@
+/* Pseudo code
 
+var picture1
+var picture2
+
+listen for event click
+
+  if picture1 is chosen
+    increase picture 1 count by 1
+  if picture 2 is chosen
+    increase picture 2 count by 2
+
+Display separate page with chart with how many times the picture was chosen.
+
+*/
 
 /*
-JavaScript:
 Photo constructor
 path to the photo at img\
 total votes received by photo
