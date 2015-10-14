@@ -1,9 +1,9 @@
 //array of photo instances
 var puppyPhotos = [];
 
-function puppies(puppyname,filepath){
+function puppies(puppyname, path){
   this.puppyname = puppyname;
-  this.path = filepath;
+  this.path = path;
   this.votes = 0;
   puppyPhotos.push(this);
 };
@@ -25,11 +25,11 @@ var puppy12 = new puppies('Puppy 12','images/pic12.jpeg');
 
 //method to display 2 random photos
 var randomImg = function() {
-  return (Math.floor(Math.random() * puppyPhotos.length));
-};
+  return Math.floor(Math.random() * (puppyPhotos.length)+1);
+}
 console.log(randomImg());
 
-/*
+
 var image1 = document.getElementById(option1);
 var image2 = document.getElementById(option2);
 
@@ -37,19 +37,16 @@ var randomPhoto1, randomPhoto2;
 
 function compareImg(){
   do {
-    randomPhoto1 = randomImg();
-    randomPhoto2 = randomImg();
+    randomPhoto1 = puppyPhotos[randomImg()];
+    randomPhoto2 = puppyPhotos[randomImg()];
 
-    option1.src = puppies[randomPhoto1].path;
-    option2.src = puppies[randomPhoto2].path;
+    image1.src = randomPhoto1["path"];
+    image2.src = randomPhoto2["path"];
   }
   while (randomPhoto1 === randomPhoto2);
-
 };
 
 compareImg();
-*/
-
 
 /*
 //event listener per click
